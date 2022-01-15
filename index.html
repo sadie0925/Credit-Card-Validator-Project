@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit Card Validator</title>
+</head>
+<body>
+    <div class= "card">
+        <form>
+            <h1 class="title_of_page">Check Validation of your card</h1>
+            <div class = "cardinput">
+                <label for = "cardnum" >Card Number</label>
+                <input type ="text" class = "cardLabel" id = "cardnum" placeholder = "xxxx-xxxx-xxxx-xxxx" required>
+            </div>  
+            <div class = "cardinput">
+                <label for = "Expiry">Expriation Date</label>
+                <input type = "date" class = "cardLabel" id = "Expiry" min ="2019-01-01" required>
+            </div>
+            <button type = "Check" class = "clickButton">Submit to check validation</button>
+            <button type = "Clear" class = "clickButton">Reset</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
