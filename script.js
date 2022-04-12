@@ -35,7 +35,7 @@ function LuhnAlgorithm ( unsigned cardNumber ) {
     return finalSum;
 }
 
-int main() {
+{
     unsigned long long int n{0};
     int result{0};
     cout << "Please enter your credit card Number: ";
