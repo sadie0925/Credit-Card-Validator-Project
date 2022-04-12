@@ -34,18 +34,3 @@ function LuhnAlgorithm ( unsigned cardNumber ) {
     finalSum = oddsum + evensum;
     return finalSum;
 }
-
-{
-    unsigned long long int n{0};
-    int result{0};
-    cout << "Please enter your credit card Number: ";
-    cin >> n;
-    result = LuhnAlgorithm ( n );
-    if ( result%10 != 0 ) {
-        cout << "Invalid credit card number! " << endl;
-    }
-    else {
-        cout << "Valid credit card number!" << endl;
-    }
-    return 0;
-}
